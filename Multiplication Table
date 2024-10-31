@@ -1,7 +1,13 @@
-number = int(input("Input a number : "))
+while True:
+    number = int(input("Enter a number to see its multiplication table: "))
+    print(f"Multiplication table for {number}:")
 
+    for i in range(1, 11):  # Loop from 1 to 10
+        result = number * i
+        print(f"{number} x {i} = {result}")
 
-print("Here is your multiplication table: ")
-for i in range(1,11):
-    result = i * number
-    print(f"{number} x {i} = {result} ")
+    # Ask the user if they want to run the program again
+    choice = input("Do you want to see another table? (yes/no): ").strip().lower()
+    if choice != "yes":
+        print("Goodbye!")
+        break
