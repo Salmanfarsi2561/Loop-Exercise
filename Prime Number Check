@@ -1,0 +1,11 @@
+import math
+
+number = int(input("Enter a number: "))
+
+if ((number%2)==0):
+    print("Number Is not A prime Number")
+        
+        
+else:
+    print("Number is prime")
+    
